@@ -55,32 +55,29 @@ This app would be a remake of external servers that would be communicating with 
 
 * admin < user
     * t
-
-
-
-* finantial
-    * t
-        * amount
-* fafsa < finantial
-    * t 
-    * belongs_to student
-* tap < finantial
-    * t 
-    * belongs_to student
-* loan < finantial
-    * t 
-    * belongs_to student
-* scholarship < finantial
-    * t 
-        * amount
-    * belongs_to student
 * student < user
     * t
 
-    * has_one fafsa
-    * has_one tap
-    * has_one loan
-    * has_one scholarship
+    * has_many financial
+
+
+* financial
+    * t
+        * amount
+* fafsa < financial
+    * t 
+    * belongs_to student
+* tap < financial
+    * t 
+    * belongs_to student
+* loan < financial
+    * t 
+    * belongs_to student
+* scholarship < financial
+    * t 
+        * amount
+    * belongs_to student
+
 
 
 
